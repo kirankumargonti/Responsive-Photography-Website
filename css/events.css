@@ -1,0 +1,11 @@
+/* ================Gallery banner======================== */
+#gallery-banner {
+    background-image: var(--events-bg-img);
+}
+
+#gallery-banner::after {
+    background: var(--events-main-overlay);
+}
+#gallery {
+    background: var(--events-gradient);
+}

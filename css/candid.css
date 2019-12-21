@@ -1,0 +1,11 @@
+/* ================Gallery banner======================== */
+#gallery-banner {
+    background-image: var(--candid-bg-img);
+}
+
+#gallery-banner::after {
+    background: var(--candid-main-overlay);
+}
+#gallery {
+    background: var(--candid-gradient);
+}

@@ -1,0 +1,11 @@
+/* ================Gallery banner======================== */
+#gallery-banner {
+    background-image: var(--social-bg-img);
+}
+
+#gallery-banner::after {
+    background: var(--social-main-overlay);
+}
+#gallery {
+    background: var(--social-gradient);
+}
