@@ -36,7 +36,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Gallery
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="nav-custom">
                                 <a class="dropdown-item" href="./albums/portrait.html">Portrait</a>
                                 <a class="dropdown-item" href="./albums/wedding.html">Wedding and
                                     Pre-Wedding</a>
@@ -46,7 +46,7 @@
                                 <a class="dropdown-item" href="./albums/nature.html">Nature</a>
                                 <a class="dropdown-item" href="./albums/indoor.html">Indoor</a>
                                 <a class="dropdown-item" href="./albums/outdoor.html">Outdoor</a>
-                                <a class="dropdown-item" href="./albums/social.html">Social Media</a>
+                                <a class="dropdown-item" href="./albums/social.html">Social</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -83,8 +83,8 @@
                     </a>
                     <a href="./albums/wedding.html" target="_blank">
                         <div class="gallery-images" data-scroll>
-                            <img src="https://cdn.pixabay.com/photo/2019/04/27/14/00/indian-4160039_1280.jpg"
-                                alt="" class="card-img img-fluid">
+                            <img src="https://cdn.pixabay.com/photo/2019/04/27/14/00/indian-4160039_1280.jpg" alt=""
+                                class="card-img img-fluid">
                             <div class="overlay-text">
                                 <h2>Wedding and Pre-Wedding</h2>
                             </div>
@@ -92,8 +92,8 @@
                     </a>
                     <a href="./albums/events.html" target="_blank">
                         <div class="gallery-images" data-scroll>
-                            <img src="https://cdn.pixabay.com/photo/2016/01/19/18/02/concerts-1150042_1280.jpg"
-                                alt="" class="card-img img-fluid">
+                            <img src="https://cdn.pixabay.com/photo/2016/01/19/18/02/concerts-1150042_1280.jpg" alt=""
+                                class="card-img img-fluid">
                             <div class="overlay-text">
                                 <h2>Events</h2>
                             </div>
@@ -113,7 +113,8 @@
                     </a>
                     <a href="./albums/advertising.html" target="_blank">
                         <div class="gallery-images" data-scroll>
-                            <img src="https://cdn.pixabay.com/photo/2016/09/07/10/04/education-1651259_1280.jpg" alt="" class="card-img img-fluid">
+                            <img src="https://cdn.pixabay.com/photo/2016/09/07/10/04/education-1651259_1280.jpg" alt=""
+                                class="card-img img-fluid">
                             <div class="overlay-text">
                                 <h2>Advertising Photography</h2>
                             </div>
@@ -133,7 +134,8 @@
                 <div class="col-sm-4 col-md-4 col-lg-4">
                     <a href="./albums/indoor.html" target="_blank">
                         <div class="gallery-images" data-scroll>
-                            <img src="https://images.pexels.com/photos/2793729/pexels-photo-2793729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="card-img img-fluid">
+                            <img src="https://images.pexels.com/photos/2793729/pexels-photo-2793729.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                                alt="" class="card-img img-fluid">
                             <div class="overlay-text">
                                 <h2>Indoor</h2>
                             </div>
@@ -141,7 +143,8 @@
                     </a>
                     <a href="./albums/outdoor.html" target="_blank">
                         <div class="gallery-images" data-scroll>
-                            <img src="https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="card-img img-fluid">
+                            <img src="https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="card-img img-fluid">
                             <div class="overlay-text">
                                 <h2>Outdoor</h2>
                             </div>
@@ -149,7 +152,8 @@
                     </a>
                     <a href="./albums/social.html" target="_blank">
                         <div class="gallery-images" data-scroll>
-                            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="" class="card-img img-fluid">
+                            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="" class="card-img img-fluid">
                             <div class="overlay-text">
                                 <h2>Social</h2>
                             </div>
@@ -170,6 +174,21 @@
     </footer>
     <!--==================End of footer=======================-->
     <!-- Optional JavaScript -->
+    <script>
+        var toggler = document.getElementById('nav-custom');
+
+        function changeElClose() {
+            var banner = document.getElementById('gallery-banner-text');
+            banner.style.zIndex = "-1";
+        }
+
+        function changeElOpen() {
+            var banner = document.getElementById('gallery-banner-text');
+            banner.style.zIndex = "0";
+        }
+        toggler.addEventListener('mouseover', changeElClose);
+        toggler.addEventListener('mouseout', changeElOpen);
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
     <script>

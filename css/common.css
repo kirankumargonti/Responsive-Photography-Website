@@ -117,8 +117,8 @@ nav {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1 !important;
     height: auto;
+    width: 100%;
 }
 
 #banner .banner-main {
@@ -133,7 +133,6 @@ nav {
 #banner .banner-main h1 {
     font-size: 3rem;
     font-family: var(--main) !important;
-
 }
 
 #banner .banner-main p {
@@ -372,6 +371,13 @@ img.hover-shadow {
         background-color: rgb(6, 38, 65);
     }
 
+    .nav-link {
+        border: none !important;
+    }
+    #banner { 
+        top: 45%;
+
+    }
     #gallery-banner {
         height: 70vh;
     }
@@ -397,12 +403,14 @@ img.hover-shadow {
     }
 
     .close {
-        color: #000000;
-        top: 0 !important;
+        color: #ffffff !important;
+        top: 140px !important;
         right: 5px;
         font-size: 35px;
     }
-
+    .close:hover { 
+        color: #000 !important;
+    }
     .prev,
     .next {
         font-size: 15px;
@@ -412,6 +420,10 @@ img.hover-shadow {
     .modal {
         width: 100%;
         height: 100% !important;
+    }
+    .modal-content {
+        top: 20%;
+        position: absolute;
     }
 
 }

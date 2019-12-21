@@ -87,10 +87,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 #gallery-banner-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #gallery-banner-text p {
@@ -186,8 +187,18 @@ body {
 }
 
 @media (max-width: 576px) {
+    nav {
+        background-color: rgb(6, 38, 65);
+    }
+    .nav-link {
+        border: none !important;
+      }
+    #gallery-banner-text {
+        text-align: center;
+        top: 45%;
+    }
     .gallery-banner-text h1 {
-        font-size: 1.5rem !important;
+        font-size: 1.3rem !important;
     }
 
     .gallery-banner-text p {

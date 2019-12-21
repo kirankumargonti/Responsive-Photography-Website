@@ -93,6 +93,7 @@ body {
   align-items: center;
   color: #ffffff;
   text-align: center;
+  width: 100%;
 }
 
 #banner .banner-main h1 {
@@ -130,7 +131,7 @@ body {
 /*========Grid==========*/
 #grid {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,8 +154,8 @@ body {
 
 
 .grid-caption {
-  text-transform: capitalize;
-  font-size: 4rem;
+  text-transform: uppercase;
+  font-size: 3rem;
   border-bottom: 5px solid var(--color);
   position: relative;
   display: inline-block;
@@ -185,7 +186,8 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 250px;
-  transition:  all 0.5s ease-in !important;
+  transition: all 0.7s ease-in-out !important;
+  cursor: pointer;
 }
 
 /*========End of Grid==========*/
@@ -199,8 +201,8 @@ body {
 }
 
 .services-caption {
-  text-transform: capitalize;
-  font-size: 4rem;
+  text-transform: uppercase;
+  font-size: 3rem;
   border-bottom: 5px solid var(--color);
   position: relative;
   display: inline-block;
@@ -336,7 +338,7 @@ body {
 }
 
 .about-caption {
-  font-size: 4rem;
+  font-size: 3rem;
   border-bottom: 5px solid var(--color);
   position: relative;
   display: inline-block;
@@ -345,6 +347,7 @@ body {
   position: relative;
   z-index: 2;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .about-caption::after {
@@ -363,6 +366,7 @@ body {
   font-size: 2rem;
   text-transform: capitalize;
 }
+
 #about h4 {
   text-transform: capitalize;
   color: rgb(250, 162, 0);
@@ -406,9 +410,8 @@ body {
   z-index: 2;
   position: relative;
   color: #ffffff;
-  margin: auto;
-  text-transform: capitalize;
-  font-size: 4rem;
+  text-transform: uppercase;
+  font-size: 3rem;
   border-bottom: 5px solid var(--color);
   position: relative;
   display: inline-block;
@@ -527,12 +530,26 @@ body {
 
 /*=============================================================*/
 @media (max-width: 576px) {
+  nav {
+    background-color: rgb(6, 38, 65);
+  }
+
   nav ul {
     text-align: center !important;
   }
 
+  .nav-link {
+    border: none !important;
+  }
+
   .slider {
     height: 70vh !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  #banner {
+    top: 45% !important;
   }
 
   #banner .banner-main h1 {
@@ -541,7 +558,7 @@ body {
 
   #banner .banner-main p {
     font-size: 0.8rem;
-    padding-top: 20px;
+    padding: 5px !important;
   }
 
   .navbar-nav {
@@ -587,6 +604,7 @@ body {
   .box6 {
     width: 100%;
     height: 100px;
+    transition: all 0.7s ease-in-out !important;
   }
 
   /*=============Services============= */
