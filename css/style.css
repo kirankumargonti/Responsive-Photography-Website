@@ -513,8 +513,8 @@ body {
 #footer p {
   font-size: 1rem;
   letter-spacing: 1px;
-  /*============================Scroll-Out=================================*/
 }
+  /*============================Scroll-Out=================================*/
 
 [data-scroll] {
   transition: transform 0.5s;
@@ -695,8 +695,6 @@ body {
   #contact .contact-right h3 {
     font-size: 1.2rem;
   }
-
-
 
 }
 
